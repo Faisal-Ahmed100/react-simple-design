@@ -1,0 +1,178 @@
+section.service-aria.p {
+    width: 100%;
+}
+
+.s-text {
+    width: 100%;
+    text-align: center;
+}
+
+.s-text h6 {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--all-color);
+    margin-bottom: 15px;
+}
+
+h2.s-text-h2 {
+    width: 64%;
+    font-size: 40px;
+    margin: auto;
+    color: rgb(27, 27, 27);
+}
+
+.s-wapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.s-box {
+    width: 30%;
+    background: #fff;
+    height: auto;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.s-icon-w{
+    width: 100%;
+}
+.s-box-icon {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background: var(--all-color);
+    margin-bottom: 20px;
+}
+
+.s-box-icon i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.s-box-icon::after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #0779e4 transparent transparent transparent;
+}
+
+h2.s-box-texts {
+    font-size: 20px;
+    color: var(--all-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p.s-box-p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+a.s-box-btn {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--all-color);
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+a.s-box-btn i {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+@media (max-width:1200px) {
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+}
+
+@media (max-width:992px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    h2.s-text-h2 {
+        width: 80%;
+        font-size: 35px;
+    }
+    }
+
+    @media (max-width:768px) {
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+        h2.s-text-h2 {
+            width: 90%;
+            font-size: 30px;
+        }
+        .s-box-icon {
+            width: 35%;
+            height: 30%;
+        }
+        
+        .s-box {
+            width: 31%;
+            padding: 25px 20px;
+        }
+        
+        a.s-box-btn {
+            font-size: 1rem;
+        }
+        
+        h2.s-box-texts {
+            font-size: 18px;
+        }
+        }
+
+        @media (max-width:658px) {
+            .container{
+                width: 95%;
+                margin: auto;
+            }
+
+            section.service-aria.p {
+                height: 100%;
+            }
+            
+            .s-wapper {
+                display: block;
+            }
+            
+            .s-box {
+                width: 95%;
+                margin-bottom: 20px;
+                margin: auto;
+            }
+            
+            .s-box-icon {
+                width: 20%;
+            }
+            
+            h2.s-text-h2 {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+        

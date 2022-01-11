@@ -1,181 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500&family=Roboto+Slab:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500&family=Roboto+Slab:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&display=swap");
+:root {
+  --all-color: #0779e4;
+  --bg-color:#f8f8f8;
+  --color:#999;
+}
+[data-theme='dark'] {
+  background-color:#CDDEFF;
+  --all-color: #0779e4;
+  color: rgb(0, 0, 0);
+  --btn-color:#0779e4;
+  --text-color:#fff;
+
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.main {
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--bg-color);
+  color: var(--color);
+}
+
+.p {
+  padding: 5em 0;
+}
+.header-bg {
+  background-image: url(./img/cc.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.bg-rgb {
+  height: 100vh;
+  background: rgba(0, 83, 161, 0.3803921568627451);
+}
+.about-left-img {
+  background-image: url(./img/aaa.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% center;
+  height: 100vh;
   width: 100%;
 }
 
-.container {
-  width: 1140px;
-  margin: auto;
+.about-com-wape {
+  display: none;
 }
 
-.head-text {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.head-text h2 {
-  font-size: 35px;
-  color:#280d5f;
-  margin-bottom: 40px;
-  font-weight: 500;
-}
-.road-map-wapper {
-  width: 100%;
-  height: auto;
-}
-.box-a,
-.box-b,
-.box-c {
-  position: relative;
-}
-
-.curcle-1 {
-  position: absolute;
-  background: #280d5f;
-  padding: 20px;
-  border-radius: 100px;
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  top: -28px;
-  left: -41px;
-  display: -webkit-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-animation: jump 3s infinite;
-  animation: jump 3s infinite;
-}
-
-.curcle-2{
-  position: absolute;
-  background: #280d5f;
-  padding: 20px;
-  border-radius: 100px;
-  width: 70px;
-  height: 70px;
-  top: -28px;
-  right: -40px;
-  color: #fff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-animation: jump 3s infinite;
-  animation: jump 3s infinite;
-}
-
-.curcle-3{
-  position: absolute;
-  background: #280d5f;
-  padding: 20px;
-  border-radius: 100px;
-  width: 70px;
-  height: 70px;
-  top: -28px;
-  left:-41px;
-  color: #fff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-animation: jump 3s infinite;
-  animation: jump 3s infinite;
-}
-@keyframes jump {
-  0% {
-    transform: scale(1);
+@media (max-width: 658px) {
+  .about-com-wape {
+    display: block;
   }
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-}
-.box1 {
-  width: 100%;
-  border-left: 3px solid #280d5f;
-  border-bottom: 3px solid #280d5f;
-  border-bottom-left-radius: 10px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-ul.inner-box {
-  padding-left: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-bottom: 15px;
-}
-
-.box2 {
-  border-right: 3px solid #280d5f;
-  border-bottom: 3px solid #280d5f;
-  border-bottom-right-radius: 10px;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  height: auto;
-}
-
-ul.inner-box-2 {
-  padding-right: 70px;
-  padding-bottom: 15px;
-}
-
-.box3 {
-  border-left: 3px solid #280d5f;
-  border-bottom: 3px solid #280d5f;
-  border-bottom-left-radius: 10px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-ul.inner-box-3 {
-  padding-left: 70px;
-  padding-bottom: 15px;
-}
-
-li {
-  font-size: 18px;
-  line-height: 30px;
-  color:#280d5f;
-  font-weight: 400;
-}
-
-
-@media (max-width:1200px) {
-
-  .container{
-    width: 100%;
-    padding: 0 40px;
-    margin: auto;
-  }
-  
-}
-
-@media (max-width:992px) {
-
-  .container{
-    width: 95%;
-    margin: auto;
-  }
-  
-}
-
-@media (max-width:768px) {
-
-  .container{
-    width: 90%;
-    margin: auto;
-  }
-  
 }

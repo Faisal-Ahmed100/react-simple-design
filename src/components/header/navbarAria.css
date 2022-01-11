@@ -1,0 +1,351 @@
+.dark-mode {
+    position: fixed;
+    top: 70%;
+    right: 0;
+    background: #555555ad;
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 9;
+    transition: all 0.3s linear;
+}
+.tscale {
+    transition: all 0.3s linear;
+    transform-origin: right;
+    transform: translateX(60px);
+    opacity: 0;
+}
+.header {
+    width: 100%;
+    background: transparent;
+    position: sticky;
+    top: 0;
+}
+.actives{
+    background-color: #0779e4e6;
+    position: fixed;
+    z-index: 999;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+}
+
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.nav-menu-icon {
+    color: #fff;
+    display: none;
+}
+
+.menu{
+    display: none;
+    color: #fff;
+}
+
+ul.navbar-ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    justify-content: space-between;
+}
+
+ul.navbar-ul li {
+    list-style: none;
+}
+
+ul.navbar-ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.dark-mode i {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* hero aria */
+
+section.header-aria {
+    width: 100%;
+}
+
+header.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88vh;
+    justify-content: center;
+}
+
+.name-txt {
+    width: 100%;
+}
+
+span.say-hi {
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--all-color);
+    position: relative;
+}
+
+span.say-hi::after {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+}
+
+h1.hero-name {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+span.run-text {
+    font-size: 3rem;
+}
+
+p.hero-p {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 35px;
+    font-weight: 500;
+    margin: 30px 0;
+    color: #efefef;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn-group a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 15px 18px;
+    border-radius: 3px;
+}
+
+a.here {
+    background-color: var(--all-color);
+    color: #fff;
+}
+a.port {
+    background: #fff;
+    color: var(--all-color);
+}
+.btn-group a:first-child {
+    margin-right: 40px;
+}
+
+.hero-links {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.hero-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+a.fb {
+    margin-right: 15px;
+}
+
+a.twiter {
+    margin-right: 15px;
+}
+
+
+
+@media (max-width:1200px) {
+   .container{
+       width: 95%;
+       margin: auto;
+   } 
+}
+
+@media (max-width:992px) {
+
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .navbar{
+        width: 100%;
+    }
+    ul.navbar-ul{
+        width: 65%;
+    }
+ }
+
+ @media (max-width:768px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    } 
+
+    .navbar{
+        width: 100%;
+        height: 10vh !important;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .close{
+        font-size: 2.5rem !important;
+    }
+    .nav-menu-icon {
+        color: #fff;
+        display: block;
+    }
+    ul.navbar-ul{
+    width: 40%;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: -138px;
+    background: #000000b8;
+    height: 50vh;
+    text-align: center;
+    }
+
+    ul.active{
+        display: block;
+        right: 0;
+    }
+   
+
+ul.navbar-ul li a {
+    color: #fff;
+    width: 100%;
+}
+
+ul.navbar-ul li {
+    width: 100%;
+    padding: 10px;
+}
+
+h1.hero-name {
+    font-size: 3rem;
+}
+
+p.hero-p {
+    width: 100%;
+}
+ }
+
+ @media (max-width:658px) {
+
+    .header-bg {
+        height: 100vh;
+    }
+    
+    .bg-rgb {
+        height: 100vh;
+    }
+    .container{
+        width: 95%;
+        margin: auto;
+    } 
+
+    .nav-menu-icon {
+        color: #fff;
+        display: block;
+    }
+    
+    header.hero {
+        width: 100%;
+        height: 88vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1.hero-name {
+        font-size: 2rem;
+    }
+    
+    span.run-text {
+        font-size: 1.8rem;
+    }
+    
+    p.hero-p {
+        font-size: 1.1rem;
+        margin: 20px 0;
+        line-height: 24px;
+    }
+    
+    .btn-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    a.here {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    a.port {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    
+ 
+    
+    .hero-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a.fb{
+        margin: 0;
+    }
+    a.twiter{
+        margin: 0;
+    }
+ }

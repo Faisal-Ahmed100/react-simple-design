@@ -1,0 +1,145 @@
+.test-bg{
+ 
+  background-image: url(../../img/cliensetisfy.webp);
+  background-size: cover;
+  }
+
+.testimonial{
+  background-color: #2196f347;
+}
+
+.test-wap {
+  display: flex;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.t-box {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+}
+
+.testi-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.t-img {
+  width: 100px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+}
+.t-img {
+  background-image: url(../../img/new.JPG);
+  background-size: cover;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+}
+
+span.tes-span {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  right: -9px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  background: #0779e4;
+  justify-content: center;
+  align-items: center;
+}
+
+span.tes-span i {
+  color: #fff;
+}
+
+.testi-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin-left: 20px;
+  width: 75%;
+}
+
+h2.roger {
+  font-size: 18px;
+  color: #141414;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h4.marketer {
+  font-size: 12px;
+  color: var(--all-color);
+  font-weight: 600;
+}
+
+.t-box p {
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+
+button.sc-gKclnd.lcUbOd.rec.rec-dot.rec.rec-dot_active {
+  background: var(--all-color) !important;
+  box-shadow: 0 0 1px 3px rgb(100 180 239) !important;
+  width: 5px !important;
+  height: 5px !important;
+}
+
+
+
+.jRFJkP:hover:enabled, .jRFJkP:focus:enabled {
+    color: #fff;
+    background-color: rgb(29, 135, 255) !important;
+    box-shadow: 0 0 2px 0 #333;
+}
+
+button.sc-gKclnd.eaptOe.rec.rec-dot {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .t-box {
+    width: 37%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+  .t-box {
+    width: 50%;
+  }
+}
+@media (max-width: 658px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+  .t-box {
+    width: 100%;
+    padding: 10px;
+  }
+}

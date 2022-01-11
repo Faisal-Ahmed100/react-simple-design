@@ -1,0 +1,135 @@
+.counterUp {
+    width: 100%;
+    background-image: url(../../img/cliensetisfy.webp);
+    background-size: cover;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+}
+
+.counter-bg{
+    background-color: #0779e4e0;
+}
+
+.conuter-wap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45vh;
+}
+
+.conuter-box {
+    display: flex;
+}
+
+.c-child-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.c-child-box i {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.c-child2 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+h2.c-text {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3.c-text-d {
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (max-width:1200px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    
+}
+@media (max-width:992px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .c-child-box i {
+        font-size: 3rem;
+    }
+    
+    h2.c-text {
+        font-size: 1.5rem;
+    }
+    
+    h3.c-text-d {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:768px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .c-child-box i {
+        font-size: 2.5rem;
+    }
+    
+    h2.c-text {
+        font-size: 1.3rem;
+    }
+    
+    h3.c-text-d {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:658px) {
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .conuter-wap {
+        display: block;
+        height: 100%;
+        padding: 50px;
+    }
+    
+    .conuter-box {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    
+    .c-child-box {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .c-child2 {
+        display: block;
+        text-align: center;
+    }
+    
+    .conuter-box:last-child {
+        margin-bottom: 0;
+    }
+    
+    .c-child-box i {
+        font-size: 3rem;
+    }
+    
+    h2.c-text {
+        font-size: 1.5rem;
+    }
+}

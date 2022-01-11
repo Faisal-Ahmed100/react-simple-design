@@ -1,58 +1,49 @@
 import React from "react";
 import "./App.css";
+import AboutAria from "./components/about/AboutAria";
+import NavbarAria from "./components/header/NavbarAria";
+import Services from "./components/services/Services";
+import SubAbout from './components/about/SubAbout';
+import SubSkills from './components/about/SubSkills';
+import SubExprince from './components/about/SubExprince';
+
+import { Routes, Route } from "react-router-dom";
+import CounterUp from "./components/counterUp/CounterUp";
+import Protfolio from "./components/protfolio/Protfolio";
+import Testimonials from "./components/testimonials/Testimonials";
+import Pricing from "./components/pricing/Pricing";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import useLocalStorage from 'use-local-storage';
 
 const App = () => {
+ const [theme,setTheme]=useLocalStorage('theme' ? 'dark' : 'light');
+  const SwitchNewTheme=()=>{
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  }
   return (
-    <div className="main">
-      <div className="container">
-        <div className="head-text">
-          <h2>Road Map</h2>
-        </div>
-        <div className="road-map-wapper">
-          <div className="box1 box-a">
-            <div className="curcle-1">
-              <div className="inner-curcle-1">
-                <h3>Q3</h3>
-                <p>2021</p>
-              </div>
-            </div>
-            <ul className="inner-box">
-              <li>List every promising pair.</li>
-              <li>Regular NFT drops</li>
-              <li>Info & Analytics on ChronoSwap.org</li>
-              <li>Audits of the contracts</li>
-            </ul>
-          </div>
-          <div className="box2 box-b">
-            <div className="curcle-2">
-              <div className="inner-curcle-2">
-                <h3>Q1</h3>
-                <p>2021</p>
-              </div>
-            </div>
-            <ul className="inner-box-2">
-              <li>Reduce CNO emission per block</li>
-              <li>Lottery system for burning mechanism</li>
-              <li>CMC & Coingecko Listings</li>
-              <li>NFT marketplace</li>
-            </ul>
-          </div>
-          <div className="box3 box-c">
-            <div className="curcle-3">
-              <div className="inner-curcle-3">
-                <h3>Q2</h3>
-                <p>2021</p>
-              </div>
-            </div>
-            <ul className="inner-box-3">
-              <li>Launchpad & IFO</li>
-              <li>Make ChronoSwap a crosschain Dex</li>
-              <li>DAO token for governance</li>
-              <li>Listing on CEX</li>
-            </ul>
-          </div>
-        </div>
+    <div className="app" data-theme={theme}>
+    <div className="header-bg">
+      <div className="bg-rgb">
+      <NavbarAria clicks={SwitchNewTheme} />
       </div>
+      </div>
+      <AboutAria />
+      <div className="about-com-wape container">
+                <Routes>
+                  <Route path="/" element={<SubAbout />} />
+                  <Route path="/subSkills" element={<SubSkills />} />
+                  <Route path="/subExprince" element={<SubExprince />} />
+                </Routes>
+              </div>
+      <Services />
+      <CounterUp />
+      <Protfolio />
+      <Testimonials />
+      <Pricing />
+      <Contact />
+      <Footer />
     </div>
   );
 };

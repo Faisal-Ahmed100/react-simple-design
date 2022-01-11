@@ -1,0 +1,318 @@
+section.about-aria {
+  width: 100%;
+  height: 100%;
+}
+
+.about-wapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.about-box {
+  width: 48%;
+  height: 100%;
+}
+
+.about-left {
+  position: relative;
+}
+.about-left::before {
+  position: absolute;
+  bottom: 130px;
+  left: -30px;
+  width: 100%;
+  height: 100px;
+  content: "";
+  background: #f2f2f2;
+  background: #89c4fb;
+  z-index: -1;
+}
+
+.about-left::after {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  width: 100%;
+  height: 100px;
+  content: "";
+  background: #f2f2f2;
+  background: #57abfa;
+  z-index: -1;
+}
+
+.about-com-wape1{
+  display: block;
+}
+.about-right-btns {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.about-right-btns a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: #999;
+  transition: all 0.3s ease-in-out;
+  
+}
+a.active{
+    background-color: var(--all-color);
+    color: #fff;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    transform-origin:left;
+}
+a.active::after{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #0779e4 transparent transparent transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+a.about-btn {
+  margin-right: 10px;
+}
+
+a.skil-btn {
+  margin-right: 10px;
+}
+
+.about-texts {
+  width: 100%;
+}
+
+.about-texts h2 {
+  font-size: 30px;
+  margin: 30px 0;
+  font-weight: 600;
+  color: #323232;
+}
+
+.about-texts p {
+  font-size: 1.1rem;
+  line-height: 28px;
+}
+
+.resome-btn {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.resome-btn a {
+  text-decoration: none;
+  padding: 12px 15px;
+  background: var(--all-color);
+  border-radius: 3px;
+  color: #fff;
+  border: 1px solid var(--all-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+
+.resome-btn a:hover {
+  background: transparent;
+  color: #000;
+}
+
+.about-texts h3 {
+  margin: 25px 0;
+  font-size: 22px;
+  color: #323232;
+  line-height: 35px;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 15px;
+	width: 100%;
+}
+
+.progress-done {
+	background-color: #cda60d;
+	box-shadow: 0 0x 0px -5px #9174c5, 0 2px 5px #9b9b9b;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 2s ease 0.3s;
+}
+
+span.skill-top-text {
+  color: #000;
+  font-weight: 600;
+}
+
+.about-com-wape {
+  width: 100%;
+}
+
+.exprince {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ex-all {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.ex-all h4 {
+  font-size: 19px;
+  color: #323232;
+}
+
+.ex-span {
+  width: 100%;
+  line-height: 28px;
+  margin-top: 10px;
+}
+
+span.span1 {
+  color: var(--all-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+span.span1 i {
+  margin-right: 10px;
+  color: var(--all-color);
+}
+
+
+@media (max-width:1200px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (max-width:992px) {
+  .container{
+    width: 95%;
+    margin:auto;
+  }
+  
+  .about-texts h2 {
+    margin: 20px 0;
+}
+
+.about-texts h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.about-texts h2 {
+  margin: 25px 0;
+}
+
+
+p.about-text-p {
+  line-height: 25px;
+}
+
+.progress {
+  margin: 14px 0;
+}
+  
+}
+
+@media (max-width:768px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+
+  .about-texts h2 {
+    margin: 15px 0;
+    font-size: 25px;
+}
+
+.progress {
+    margin: 10px 0;
+    height: 12px;
+    width: 100%;
+}
+
+.about-texts h3 {
+    margin: 12px 0;
+}
+
+.ex-all {
+    margin-top: 22px;
+}
+
+.ex-span {
+    line-height: 25px;
+}
+
+.done {
+    font-size: 13px;
+}
+
+.about-texts h3 {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.ex-all h4 {
+    font-size: 16px;
+}
+
+span.skill-top-text {
+    font-size: 15px;
+}
+}
+
+@media (max-width:658px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+  .about-com-wape1{
+    display: none;
+  }
+  .about-wapper {
+    width: 100%;
+    display: block;
+}
+
+.about-left.about-box {
+    width: 100%;
+}
+
+.about-right.about-box {
+    margin-top: 30px;
+    width: 100%;
+}
+.about-right-btns a {
+  font-size: 0.8rem;
+}
+.about-texts h2{
+  margin-top: 25px;
+}
+}

@@ -1,0 +1,157 @@
+section.protfolio {
+  width: 100%;
+}
+
+.prot-wap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  margin-top: 58px;
+}
+
+.p-box {
+  width: 48%;
+  height: 100%;
+  position: relative;
+}
+
+
+.p-img-wap {
+  height: 65vh;
+}
+.p-box-bg-img {
+  background-image: url(../../img/protfolio-1.webp);
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.img2{
+  background-image: url(../../img/protfolio-2.webp);
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.img3{
+  background-image: url(../../img/protfolio-3.webp);
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.img4{
+  background-image: url(../../img/protfolio-4.webp);
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.img5{
+  background-image: url(../../img/protfolio-5.webp);
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.img6{
+  background-image: url(../../img/protfolio-6.webp);
+  background-position: 50% center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.p-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s linear;
+    background:#0779e4bb;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.p-text a{
+    text-decoration: none;
+}
+.p-box:hover .p-text{
+    opacity: 1;
+    transition: all 0.3s linear;
+    height: 100%;
+}
+
+h2.child-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+
+p.p-child-text {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (max-width:1200px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+  
+}
+@media (max-width:992px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+
+}
+@media (max-width:768px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+  .p-img-wap {
+    height: 55vh;
+}
+}
+
+@media (max-width:658px) {
+  .container{
+    width: 95%;
+    margin: auto;
+  }
+  .prot-wap {
+    display: block;
+}
+
+.prot-wap.margin1 {
+  margin-top: 30px;
+}
+
+.prot-wap.margin2 {
+  margin-top: 30px;
+}
+
+.p-box {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.p-img-wap {
+    height: 40vh;
+}
+
+.p-box:nth-child(2) {
+    margin-bottom: 0;
+}
+
+
+}

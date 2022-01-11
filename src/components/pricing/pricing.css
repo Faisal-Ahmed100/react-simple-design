@@ -1,0 +1,117 @@
+.pricing-wapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+.pricing-box {
+    padding: 50px 40px;
+    background: #fff;
+    text-align: center;
+}
+.pricing-box:nth-child(1){
+    margin-right: 30px;
+}
+.pricing-box:nth-child(2){
+    margin-right: 30px;
+}
+
+.pricing-box h2 {
+    font-size: 15px;
+    color: var(--all-color);
+    margin-bottom: 20px;
+}
+
+.sup-price {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--all-color);
+}
+
+.sup-price sup {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--all-color);
+    margin-right: 10px;
+    
+}
+
+
+
+.pricing-box p {
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.pricing-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pricing-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: 1px solid var(--all-color);
+    color: var(--all-color);
+    border-radius: 3px;
+    transition: all 0.2s linear;
+}
+
+.pricing-btn a:hover {
+    background: var(--all-color);
+    color: #fff;
+}
+
+@media (max-width:1200px) {
+    .container{
+        width: 95%;
+        margin:auto;
+    }
+}
+@media (max-width:992px) {
+    .container{
+        width: 95%;
+        margin:auto;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        width: 95%;
+        margin:auto;
+    }
+    .pricing-box {
+        padding: 20px 20px;
+    }
+    
+    .pricing-box:nth-child(1) {
+        margin-right: 15px;
+    }
+    
+    .pricing-box:nth-child(2) {
+        margin-right: 15px;
+    }
+}
+@media (max-width:658px) {
+    .container{
+        width: 95%;
+        margin:auto;
+    }
+
+    .pricing-wapper {
+        display: block;
+    }
+    
+    .pricing-box {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+}
+
